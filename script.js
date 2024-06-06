@@ -77,10 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   // Función para inicializar un carrusel
   function initCarousel(carouselId, interval) {
-    var slides = document.querySelectorAll(`#${carouselId} .slide`);
+    var slides = document.querySelectorAll(`.${carouselId} .slide`);
     var currentSlide = 0;
     
-
     // Muestra la primera diapositiva
     slides[currentSlide].style.display = "block";
 
@@ -91,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
       slides[currentSlide].style.display = "block";
     }
     
-    // Intervalo para cambiar automáticamente de diapositiva cada 5 segundos
+    // Intervalo para cambiar automáticamente de diapositiva cada 'interval' milisegundos
     setInterval(nextSlide, interval);
   }
 
