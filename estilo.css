@@ -394,8 +394,8 @@ html{
 
 /* Si deseas ajustar tanto el ancho como la altura */
 .skills .skill img {
-    width: 150px; /* Ajusta el ancho de las imágenes */
-    height: 150px; /* Ajusta la altura de las imágenes */
+    width: 350px; /* Ajusta el ancho de las imágenes */
+    height: 100px; /* Ajusta la altura de las imágenes */
 }
 
 
@@ -545,6 +545,8 @@ html{
     margin: auto; /* Centra horizontalmente los carruseles */
     background-color: inherit; /* Hereda el color del elemento padre (el body) */
     border-radius: 10px; /* Agrega bordes circulares */
+    border: 5px solid rgba(255, 255, 255, 0.633); /* Agrega un borde de 2 píxeles de ancho, sólido y de color negro */
+
 }
 
 .carousel {
