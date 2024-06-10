@@ -240,10 +240,12 @@ html{
     background-color: #252A2E;
     color: #fff;
     padding: 50px 20px;
+    align-items: center;
 }
 .skills .contenido-seccion{
     max-width: 1100px;
     margin: auto;
+    align-items: center;
 }
 .skills h2{
     font-size: 48px;
@@ -256,8 +258,8 @@ html{
     display: flex;
 }
 .skills .fila .col{
-    width: 50%;
-    padding: 0 20px;
+    max-width: 328px;
+    padding: 8px 8px 8px 20px;
 }
 .skills .fila .col h3{
     font-size: 28px;
@@ -272,7 +274,8 @@ html{
 }
 .skills .skill > span{
     font-weight: bold;
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
 }
 .skills .skill .barra-skill{
@@ -511,7 +514,7 @@ html{
 .portfolio {
     background-color: #252A2E;
     color: #fff;
-    padding: 50px 20px;
+    padding: 15px 0px;
     justify-content: center;
     align-items: center; 
 }
@@ -520,7 +523,7 @@ html{
     max-width: 1100px;
     margin: auto;
     text-align: center; /* Alinea el contenido al centro en pantallas pequeñas */
-
+    align-items: center; 
 }
 
 .portfolio h2 {
@@ -532,21 +535,23 @@ html{
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-    grid-gap: 35px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-gap: 29px;
     justify-content: center;
     align-items: center; 
+    
 }
 
 .carousel-container {
+    
     overflow: hidden;
-    width: 480px;
-    height: 300px; /* Ajusta este valor según el tamaño deseado */
+    width: 380px;
+    height: 200px; /* Ajusta este valor según el tamaño deseado */
     margin: auto; /* Centra horizontalmente los carruseles */
     background-color: inherit; /* Hereda el color del elemento padre (el body) */
     border-radius: 10px; /* Agrega bordes circulares */
     border: 5px solid rgba(255, 255, 255, 0.633); /* Agrega un borde de 2 píxeles de ancho, sólido y de color negro */
-
+    
 }
 
 .carousel {
@@ -567,22 +572,27 @@ html{
 
 .portfolio .proyecto {
     position: relative;
-    max-width: 340px;
+    /*max-width: 380px;*/
     height: fit-content;
     margin: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .portfolio .proyecto img {
     width: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 .portfolio .proyecto .overlay {
     position: absolute;
     top: 0;
-    width: 480px;
-    height: 300px;
+    width: 380px;
+    height: 200px;
     text-align: center;
     background: linear-gradient(#8a50bca5, #1e023a);
     display: flex;
@@ -797,12 +807,19 @@ footer .arriba{
 
     .skills .fila{
         display: block;
+        justify-content: center; 
+        justify-items: center;
+        align-items: center;
+        align-content: center;
     }
     .skills .fila .col{
         width: 100%;
+        justify-content: center;
+
     }
     .skills .fila .col .barra-skill{
         width: 100%;
+        justify-content: center;
     }
 
     .curriculum .fila{
