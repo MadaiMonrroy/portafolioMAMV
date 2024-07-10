@@ -64,7 +64,7 @@ html{
 /* SECCION I N I C I O */
 .inicio{
     margin-top: 45px;
-    background: linear-gradient(to top, rgba(1, 35, 47, 0.61), rgba(41, 6, 51, 0.697)),
+    background: linear-gradient(to top, rgba(14, 15, 15, 0.623), rgba(19, 18, 19, 0.678)),
     url(img/portada.png);
     background-size: cover;
     height: 100vh;
