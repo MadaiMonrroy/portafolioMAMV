@@ -96,9 +96,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Inicializa todos los carruseles
   initCarousel("carousel1", 3000);
-  initCarousel("carousel2", 7500);
-  initCarousel("carousel3", 8500);
-  initCarousel("carousel4", 6500);
-  initCarousel("carousel5", 4200);
-  initCarousel("carousel6", 7300);
+  initCarousel("carousel2", 2000);
+  initCarousel("carousel3", 3500);
+  initCarousel("carousel4", 3500);
+  initCarousel("carousel5", 3200);
+  initCarousel("carousel6", 3300);
+  initCarousel("carousel7", 7300);
+  initCarousel("carousel8", 7300);
 });

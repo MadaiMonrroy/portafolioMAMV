@@ -15,6 +15,8 @@
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJZ6BT7X26"></script>
+<script src="https://unpkg.com/i18next@21.8.8/dist/umd/i18next.min.js"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -23,6 +25,9 @@
   gtag('config', 'G-EJZ6BT7X26');
 </script>
 <body>
+    <!-- Selector de idioma -->
+    <button onclick="changeLanguage('es')">Español</button>
+    <button onclick="changeLanguage('en')">English</button>
     <!-- MENU ENCABEZADO -->
     <div id="headercabe" class="contenedor-header">
         <header>
@@ -368,13 +373,46 @@
             <h2>Mi Portafolio</h2>
 
             <div class="portfolio-grid">
-
-                
                 <h3>Diseño UX/UI</h3>
                 <h3>Desarrollo web</h3>
                 <div class="proyecto">
                     <div class="carousel-container">
                         <div class="carousel1">
+                            <div class="slide"><img src="img/portafolio/ecf.png" alt="Image 1.1"></div>
+                            <div class="slide"><img src="img/portafolio/ect.png" alt="Image 1.2"></div>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <h3>trello <br> Figma </h3>
+                        <p>Encantada de Conocerme - LMS de educación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div class="carousel-container">
+                        <div class="carousel2">
+                            <div class="slide"><img src="img/portafolio/ec1.png" alt="Image 1.1"></div>
+                            <div class="slide"><img src="img/portafolio/ec2.png" alt="Image 1.2"></div>
+                            <div class="slide"><img src="img/portafolio/ec3.png" alt="Image 1.3"></div>
+                            <div class="slide"><img src="img/portafolio/ec4.png" alt="Image 1.4"></div>
+                            <div class="slide"><img src="img/portafolio/ec5.png" alt="Image 1.5"></div>
+                            <div class="slide"><img src="img/portafolio/ec6.png" alt="Image 1.6"></div>
+                            <div class="slide"><img src="img/portafolio/ec7.png" alt="Image 1.7"></div>
+                            <div class="slide"><img src="img/portafolio/ec8.png" alt="Image 1.8"></div>
+                            <div class="slide"><img src="img/portafolio/bdec.png" alt="Image 1.8"></div>
+
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <h3>Html - css - js <br> vue js - node js - SQL  <br> tailwind</h3>
+                        <p>Encantada de Conocerme - LMS de educación</p>
+                    </div>
+                </div>
+                
+                <h3>Diseño UX/UI</h3>
+                <h3>Desarrollo web</h3>
+                <div class="proyecto">
+                    <div class="carousel-container">
+                        <div class="carousel3">
                             <div class="slide"><img src="img/portafolio/1.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/4.png" alt="Image 1.2"></div>
                             <div class="slide"><img src="img/portafolio/5.png" alt="Image 1.3"></div>
@@ -387,7 +425,7 @@
                 </div>
                 <div class="proyecto">
                     <div class="carousel-container">
-                        <div class="carousel6">
+                        <div class="carousel4">
                             <div class="slide"><img src="img/portafolio/15.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/16.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/17.png" alt="Image 1.2"></div>
@@ -396,7 +434,7 @@
                         </div>
                     </div>
                     <div class="overlay">
-                        <h3>Html - css - js <br> vue - node js <br> tailwind - bootrap</h3>
+                        <h3>Html - css - js <br> vue - node js - SQL <br> tailwind - bootrap</h3>
                         <p>Rockola - Administrador de Cosmeticos</p>
                     </div>
                 </div>
@@ -404,7 +442,7 @@
                 <h3>Gestión de RRSS</h3>
                 <div class="proyecto">
                     <div class="carousel-container">
-                        <div class="carousel3">
+                        <div class="carousel5">
                             <div class="slide"><img src="img/portafolio/6.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/8.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/7.png" alt="Image 1.2"></div>
@@ -417,7 +455,7 @@
                 </div>
                 <div class="proyecto">
                     <div class="carousel-container">
-                        <div class="carousel4">
+                        <div class="carousel6">
                             <div class="slide"><img src="img/portafolio/11.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/9.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/10.png" alt="Image 1.2"></div>
@@ -432,7 +470,7 @@
                 <h3>Rebranding</h3>
                 <div class="proyecto">
                     <div class="carousel-container">
-                        <div class="carousel5">
+                        <div class="carousel7">
                             <div class="slide"><img src="img/portafolio/12.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/13.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/14.png" alt="Image 1.2"></div>
@@ -445,7 +483,7 @@
                 </div>
                 <div class="proyecto">
                     <div class="carousel-container ">
-                        <div class="carousel2">
+                        <div class="carousel8">
                             <div class="slide"><img src="img/portafolio/2.png" alt="Image 1.1"></div>
                             <div class="slide"><img src="img/portafolio/3.png" alt="Image 1.2"></div>
                         </div>
@@ -458,49 +496,6 @@
             </div>
         </div>
     </section>
-
-    <!-- SECCION CONTACTO 
-    <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                 Formulario 
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"></span>
-                    </button>
-                </div>
-                 Mapa 
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Nicaragua 159, San Rafael Mza
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: 2384 - 4343443 
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: cw@example.com
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- footer -->
     <footer>
         <a href="#inicio" class="arriba">
             <i class="fa-solid fa-angles-up"></i>
