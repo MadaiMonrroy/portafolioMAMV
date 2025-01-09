@@ -851,3 +851,144 @@ footer .arriba{
         width: 100%;
     }
 }
+
+
+
+
+
+/* Contenedor principal */
+.contacto__contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    background-color: #1e2326;
+    gap: 20px;
+    padding: 40px;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 40px;
+
+    box-sizing: border-box;
+}
+
+/* Imagen */
+.contacto__imagen img {
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+/* Contenedor del formulario y texto */
+.contacto__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Título */
+.contacto__titulo {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Descripción debajo del título */
+.contacto__descripcion {
+    font-size: 16px;
+    color: #d3d3d3;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Formulario */
+.contacto__formulario {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grupo de inputs */
+.contacto__grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas */
+.contacto__label {
+    font-size: 14px;
+    color: #d3d3d3;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+.contacto__campo {
+    padding: 12px;
+    background-color: #1e1e1e; /* Fondo oscuro */
+    border: 1px solid #333333;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.contacto__campo:focus {
+    outline: none;
+    border-color: #4a90e2; /* Azul suave */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Campo de texto (textarea) */
+.contacto__campo--textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Botón */
+.contacto__boton {
+    background-color: #4a90e2; /* Azul */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto__boton:hover {
+    background-color: #357abd; /* Azul más oscuro */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .contacto__contenedor {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .contacto__imagen img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contacto__contenido {
+        max-width: 100%;
+    }
+}

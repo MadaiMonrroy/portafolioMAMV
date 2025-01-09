@@ -1,4 +1,6 @@
 let menuVisible = false;
+emailjs.init('OmqhgHqM1BaE513Em'); // Reemplaza con tu Public Key
+
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu() {
   if (menuVisible) {
@@ -103,4 +105,27 @@ document.addEventListener("DOMContentLoaded", function () {
   initCarousel("carousel6", 3300);
   initCarousel("carousel7", 7300);
   initCarousel("carousel8", 7300);
+});
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Evita que el formulario recargue la página
+
+  // Captura los datos del formulario
+  const templateParams = {
+      from_name: event.target.from_name.value,
+      email: event.target.email.value,
+      subject: this.subject.value,  // Campo Asunto
+
+      message: event.target.message.value,
+  };
+
+  // Envía el correo
+  emailjs.send('service_alghidh', 'template_dwrfcfc', templateParams)
+      .then(function(response) {
+          alert('Mensaje enviado con éxito.');
+          // Limpiar los campos del formulario
+          document.getElementById('contact-form').reset(); // Esto vacía los campos
+
+      }, function(error) {
+          alert('Error al enviar el mensaje. Por favor, intenta nuevamente.');
+      });
 });
