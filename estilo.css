@@ -945,7 +945,7 @@ footer .arriba{
 
 .contacto__campo:focus {
     outline: none;
-    border-color: #4a90e2; /* Azul suave */
+    border-color: #B37BE4; /* Azul suave */
     box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
 }
 
@@ -957,7 +957,7 @@ footer .arriba{
 
 /* Botón */
 .contacto__boton {
-    background-color: #4a90e2; /* Azul */
+    background-color: #621aa1; /* Azul */
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -969,7 +969,7 @@ footer .arriba{
 }
 
 .contacto__boton:hover {
-    background-color: #357abd; /* Azul más oscuro */
+    background-color: #B37BE4; /* Azul más oscuro */
 }
 
 /* Responsividad */
