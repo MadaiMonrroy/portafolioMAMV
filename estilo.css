@@ -972,6 +972,8 @@ footer .arriba{
     background-color: #B37BE4; /* Azul más oscuro */
 }
 
+
+
 /* Responsividad */
 @media (max-width: 768px) {
     .contacto__contenedor {

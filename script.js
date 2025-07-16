@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   descargarBtn.addEventListener("click", function () {
     // Ruta del archivo PDF
-    var rutaPdf = "CV_Madai_Monrroy.pdf";
+    var rutaPdf = "CV_MAMV_TECH.pdf";
 
     // Realizar la descarga
     descargarPDF(rutaPdf);
