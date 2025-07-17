@@ -994,3 +994,41 @@ footer .arriba{
         max-width: 100%;
     }
 }
+.tech-scroll-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.tech-scroll {
+  display: flex;
+  width: 100%;
+}
+
+.tech-track {
+  display: flex;
+  gap: 60px; /* más separación entre íconos */
+  animation: scrollInfinite 40s linear infinite; /* más lento para mejor visual */
+  width: max-content;
+}
+
+.tech-track img {
+  width: 80px; /* tamaño más grande */
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.tech-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scrollInfinite {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
